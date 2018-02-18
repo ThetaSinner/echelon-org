@@ -1,0 +1,6 @@
+outputPath: '../../site/blog'
+posts:
+  - name: 'TestPost'
+    title: 'My Test Post'
+  - name: 'AnotherPost'
+    title: 'Another Post'

@@ -1,0 +1,20 @@
+{
+  "name": "echelon-org-build",
+  "version": "1.0.0",
+  "description": "Build the echelon-lang org website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThetaSinner/echelon-org"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp default"
+  },
+  "author": "ThetaSinner",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#v4.0.0-alpha.3"
+  },
+  "dependencies": {}
+}
