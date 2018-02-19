@@ -55,5 +55,5 @@ postsConfig['posts'].each do |post|
 end
 
 theNav = Nav.new(postList).render
-File.open("#{outputPath}/post-nav.php", 'w') { |file| file.write(theNav) }
+File.open("../../site/fragments/post-nav.php", 'w') { |file| file.write(theNav) }
 
