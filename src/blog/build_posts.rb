@@ -51,7 +51,7 @@ postsConfig['posts'].each do |post|
 	File.open("#{postPath}/post.php", 'w') { |file| file.write(thePost) }
 	
 	# Save the post name for the nav.
-	postList.push Hash["name" => postName]
+	postList.push Hash["name" => postName, "date" => post['date'], "description" => post['description']]
 end
 
 theNav = Nav.new(postList).render

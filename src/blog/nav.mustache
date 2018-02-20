@@ -1,5 +1,7 @@
-<ul>
 {{#posts}}
-	<li><a href="/blog/{{name}}/post.php">{{name}}</a></li>
+	<div class="border-bottom border-right border-dark mt-3 p-2 mx-5">
+		<h5><a href="/blog/{{name}}/post.php">{{name}}</a></h5>
+		<p>{{description}}</p>
+		<small>{{date}}</small>
+	</div>
 {{/posts}}
-</ul>
