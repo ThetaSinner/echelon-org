@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const concat = require('gulp-concat');
  
 const exec = require('child_process').exec;
 
@@ -26,7 +27,14 @@ gulp.task('blog', (cb) => {
 gulp.task('sass', function () {
     return gulp.src('./scss/root.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('../site/style'));
+        .pipe(concat('index.css'))
+        .pipe(gulp.dest('../site/assets'));
 });
 
-gulp.task('default', gulp.parallel(['index', 'blog', 'fragments', 'sass', 'pages']));
+gulp.task('javascript', function () {
+    return gulp.src('./js/**/*.js')
+        .pipe(concat('index.js'))
+        .pipe(gulp.dest('../site/assets'));
+});
+
+gulp.task('default', gulp.parallel(['index', 'blog', 'fragments', 'sass', 'pages', 'javascript']));
