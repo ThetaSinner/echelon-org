@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Echelon Blog</title>
     <? require_once $_SERVER['DOCUMENT_ROOT'] . '/fragments/header-fragment.php' ?>
 
     <script type="text/javascript">

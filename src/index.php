@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Echelon Lang</title>
     <? require_once './fragments/header-fragment.php' ?>
 
     <script type="text/javascript">
