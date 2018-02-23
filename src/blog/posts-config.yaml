@@ -1,5 +1,9 @@
 outputPath: '../../site/blog'
 posts:
+  - name: 'GettersAndSetters'
+    title: 'A tale of getters and setters'
+    date: '22/02/2018'
+    description: 'A look at getters and setters in OO systems'
   - name: 'TestPost'
     title: 'My Test Post'
     date: '20/02/2018'
