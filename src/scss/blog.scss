@@ -1,0 +1,9 @@
+h2 {
+    text-align: center;
+}
+
+$containerMargin: 15em;
+.el-blog-content-container {
+    padding-left: $containerMargin;
+    padding-right: $containerMargin;
+}

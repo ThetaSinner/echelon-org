@@ -25,9 +25,8 @@ gulp.task('blog', (cb) => {
 });
 
 gulp.task('sass', function () {
-    return gulp.src('./scss/root.scss')
+    return gulp.src('./scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(concat('index.css'))
         .pipe(gulp.dest('../site/assets'));
 });
 
@@ -42,3 +41,38 @@ gulp.task('images', function () {
 });
 
 gulp.task('default', gulp.parallel(['index', 'blog', 'fragments', 'sass', 'pages', 'javascript', 'images']));
+
+gulp.task('run-watch', () => {
+    gulp.watch([
+        'index.php'
+    ], gulp.series('index'));
+
+    gulp.watch([
+        'fragments/**'
+    ], gulp.series('fragments'));
+
+    gulp.watch([
+        'pages/**'
+    ], gulp.series('pages'));
+
+    gulp.watch([
+        'blog/posts/**',
+        'blog/build_posts.rb',
+        'blog/*.mustache',
+        'blog/posts-config.yaml'
+    ], gulp.series('blog'));
+
+    gulp.watch([
+        'scss/**/*.scss'
+    ], gulp.series('sass'));
+
+    gulp.watch([
+        'js/**/*.js'
+    ], gulp.series('javascript'));
+
+    gulp.watch([
+        'images/**/*.png'
+    ], gulp.series('images'));
+});
+
+gulp.task('watch', gulp.series(['default', 'run-watch']));

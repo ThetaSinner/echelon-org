@@ -3,12 +3,14 @@
 <head>
 	<? require_once $_SERVER['DOCUMENT_ROOT'] . '/fragments/header-fragment.php' ?>
 	<title>{{title}}</title>
+
+	<link rel="stylesheet" href="/assets/blog.css" />
 </head>
 <body>
 	<? require_once $_SERVER['DOCUMENT_ROOT'] . '/fragments/nav-header.php' ?>
 
     <div class="container">
-        <div class="bg-dark el-content-container">
+        <div class="bg-dark el-content-container el-blog-content-container">
 			{{{content}}}
 		</div>
 	</div>
