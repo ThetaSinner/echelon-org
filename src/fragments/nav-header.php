@@ -1,5 +1,7 @@
 <div class="container">
-    <div class="el-nav-header-top"></div>
+    <div class="el-nav-header-top">
+        <img src="/assets/images/language-icon.png" />
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <ul class="navbar-nav">
             <li class="nav-item" id="el-nav-home">

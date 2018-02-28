@@ -37,4 +37,8 @@ gulp.task('javascript', function () {
         .pipe(gulp.dest('../site/assets'));
 });
 
-gulp.task('default', gulp.parallel(['index', 'blog', 'fragments', 'sass', 'pages', 'javascript']));
+gulp.task('images', function () {
+    return gulp.src('./images/**/*.png').pipe(gulp.dest('../site/assets/images'));
+});
+
+gulp.task('default', gulp.parallel(['index', 'blog', 'fragments', 'sass', 'pages', 'javascript', 'images']));
