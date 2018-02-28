@@ -9,6 +9,7 @@
 </head>
 <body>
     <? require_once $_SERVER['DOCUMENT_ROOT'] . '/fragments/nav-header.php' ?>
+    
     <div class="container">
         <div class="bg-dark el-content-container">
             <div class="border-bottom border-left border-light mt-3 p-2 mx-3">

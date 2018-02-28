@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>EL: {{title}}</title>
+	<? require_once $_SERVER['DOCUMENT_ROOT'] . '/fragments/header-fragment.php' ?>
+	<title>{{title}}</title>
 </head>
 <body>
-<? require_once $_SERVER['DOCUMENT_ROOT'] . "/fragments/post-nav.php" ?>
+	<? require_once $_SERVER['DOCUMENT_ROOT'] . '/fragments/nav-header.php' ?>
 
-{{{content}}}
+    <div class="container">
+        <div class="bg-dark el-content-container">
+			{{{content}}}
+		</div>
+	</div>
 </body>
 </html>
