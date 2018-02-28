@@ -10,7 +10,9 @@
 <body>
     <? require_once $_SERVER['DOCUMENT_ROOT'] . '/fragments/nav-header.php' ?>
     <div class="container">
-        <? require_once $_SERVER['DOCUMENT_ROOT'] . '/fragments/post-nav.php' ?>
+        <div class="bg-dark el-content-container">
+            <? require_once $_SERVER['DOCUMENT_ROOT'] . '/fragments/post-nav.php' ?>
+        </div>
     </div>
 </body>
 </html>

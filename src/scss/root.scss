@@ -1,10 +1,23 @@
+body {
+    background: #888;
+}
+
+.navbar.el-navbar {
+    border: none;
+}
+
 .el-nav-header-top {
     min-height: 8em;
-    background: black;
+    background: #060606;
     padding: 1em;
+    padding-left: 2em;
 
     img {
         max-width: 120px;
         max-width: 120px;
     }
+}
+
+.el-content-container {
+    padding: 1em;
 }

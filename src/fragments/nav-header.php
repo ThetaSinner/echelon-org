@@ -2,7 +2,7 @@
     <div class="el-nav-header-top">
         <img src="/assets/images/language-icon.png" />
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark el-navbar">
         <ul class="navbar-nav">
             <li class="nav-item" id="el-nav-home">
                 <a class="nav-link" href="/">Home</a>
