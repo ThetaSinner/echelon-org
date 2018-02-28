@@ -11,7 +11,7 @@
     <? require_once './fragments/nav-header.php' ?>
 
     <div class="container">
-        <div class="bg-dark el-content-container">
+        <div class="bg-light el-content-container">
             <p>This is the home of the Echelon project.</p>
             <p>
                 The primary aim of the project is to define a programming language. But there are lots of those, and setting out to re-invent the wheel would probably be unrealistic.

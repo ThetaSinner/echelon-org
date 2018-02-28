@@ -9,10 +9,10 @@
 </head>
 <body>
     <? require_once $_SERVER['DOCUMENT_ROOT'] . '/fragments/nav-header.php' ?>
-    
+
     <div class="container">
-        <div class="bg-dark el-content-container">
-            <div class="border-bottom border-left border-light mt-3 p-2 mx-3">
+        <div class="bg-light el-content-container">
+            <div class="border-bottom border-left border-primary mt-3 p-2 mx-3">
                 <p>
                     The compiler. This is a work in progress and was initially intended as a learning project to understand compiler technology.
                     I see it developing into the sandpit for ideas from this site.
