@@ -14,5 +14,7 @@
             <? require_once $_SERVER['DOCUMENT_ROOT'] . '/fragments/post-nav.php' ?>
         </div>
     </div>
+
+    <? require_once $_SERVER['DOCUMENT_ROOT'] . '/fragments/footer.php' ?>
 </body>
 </html>

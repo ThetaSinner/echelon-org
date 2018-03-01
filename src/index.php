@@ -29,5 +29,7 @@
             <p>It's just me for the moment, and most of my focus is on another project. So for now I'm just planning to add blog posts.</p>
         </div>
     </div>
+
+    <? require_once './fragments/footer.php' ?>
 </body>
 </html>
