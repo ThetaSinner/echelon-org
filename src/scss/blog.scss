@@ -6,4 +6,9 @@ $containerMargin: 15em;
 .el-blog-content-container {
     padding-left: $containerMargin;
     padding-right: $containerMargin;
+
+    h4 {
+        text-decoration: underline;
+        padding-left: 0.9em;
+    }
 }
