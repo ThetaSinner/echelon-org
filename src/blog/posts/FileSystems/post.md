@@ -1,5 +1,7 @@
 {::options parse_block_html="true" /}
 
+[WIP]
+
 ## Storing code on file systems
 
 I'd like to tell you a story.
@@ -36,6 +38,7 @@ A description of CodeDb:
 While working with code, the developer should not create a single file or folder. Instead they use the tool of their choice to create a new item - which may be a function or class or something entirely new. How this is stored is a technical detail and should not concern the developer. All data associated with an item will be made available via the database. At a minimum it must be possible to quickly understand which items an item cooperates with, what it depends on and what depends on it. The concepts of modules, components and libraries can and should be maintained because assigning names in this way is helpful to the developer. However, typical systems do not make understanding access controls especially simple. By maintaining relations and tracking access controls, CodeDb will be able to produce reports of what is available where.
 
 Required properties:
+
 - The storage system must make explicit its corruption risk. _For example, files stored in Git are well checked against corruption using hashes at key moments - this is the level of guarantee this system must make._
 - It must be possible to view the source code WITHOUT CodeDb. _There should be no possiblity of vendor lock-in or requirement to use a particular tool to view your code._
 - All the information stored by the database MUST be source controlled. _This is subtly complicated. It requires that, when source controlled, the data format should be text. However, checking in text and requiring every user to rebuild the database from that would likely be unacceptably slow._
