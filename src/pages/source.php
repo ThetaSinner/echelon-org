@@ -19,6 +19,18 @@
                 </p>
                 <a href="https://github.com/ThetaSinner/echelon">Echelon</a>
             </div>
+            <div class="border-bottom border-left border-primary mt-3 p-2 mx-3">
+                <p>
+                    A helper library for working with Unicode input.
+                </p>
+                <a href="https://github.com/ThetaSinner/echelon-unicode">echelon-unicode</a>
+            </div>
+            <div class="border-bottom border-left border-primary mt-3 p-2 mx-3">
+                <p>
+                    A hand-crafted parser which accepts Unicode input.
+                </p>
+                <a href="https://github.com/ThetaSinner/echelon-unicode-parser">echelon-unicode-parser</a>
+            </div>
         </div>
     </div>
 
